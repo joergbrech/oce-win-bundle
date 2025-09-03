@@ -4,7 +4,7 @@ message("Setting oce-win-bundle depends...")
 if(OCE_WITH_FREEIMAGE)
     add_dependencies( TKService FreeImage FreeImagePlus )
     if(NOT OCE_BUILD_SHARED_LIB)
-		   TARGET_COMPILE_DEFINITIONS(TKService PRIVATE "-DFREEIMAGE_LIB")
+		   TARGET_COMPILE_DEFINITIONS(TKService PRIVATE "FREEIMAGE_LIB")
 	  endif()
 endif()
 
